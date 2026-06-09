@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": ".", // เปลี่ยนจาก "./s" เป็น "." เพื่อให้ครอบคลุมไฟล์ใน root
+    "outDir": "./dist",
+
+    "strict": true,
+    "esModuleInterop": true, // สำคัญมาก (ต้องเป็น true)
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+
+    "sourceMap": true,
+
+    // ตัดค่าที่ไม่จำเป็นออก เพื่อลดความซับซ้อนในการทำโปรเจกต์ API
+    "jsx": "react-jsx" // หากไม่ได้ใช้ React แนะนำให้ลบบรรทัดนี้ออก
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
